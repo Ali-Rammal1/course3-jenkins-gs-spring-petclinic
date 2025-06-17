@@ -2,13 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                sh 'ls'
-                git branch: 'main', url: 'https://github.com/Ali-Rammal1/course3-jenkins-gs-spring-petclinic'
-                sh 'ls'
-            }
-        }
+        
 
         stage('Build') {
             steps {
